@@ -1,0 +1,20 @@
+syntax="proto3";
+
+import "google/protobuf/empty.proto";
+package office;
+
+service Generate {
+	rpc GetAvailableDocs(google.protobuf.Empty) return (DocInfoList) {} 
+}
+
+message DocInfoList {
+	repeated DocInfo = 1;
+}
+
+message DocInfo {
+	string name = 1;
+	string description = 2;
+}	
+
+
+
