@@ -4,7 +4,7 @@ import "google/protobuf/empty.proto";
 package office;
 
 service Generate {
-	rpc GetAvailableDocs(google.protobuf.Empty) return (DocInfoList) {} 
+	rpc GetAvailableDocs(google.protobuf.Empty) returns (DocInfoList) {} 
 }
 
 message DocInfoList {
