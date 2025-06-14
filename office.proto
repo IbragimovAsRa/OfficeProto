@@ -8,7 +8,7 @@ service Generate {
 }
 
 message DocInfoList {
-	repeated DocInfo = 1;
+	repeated DocInfo docInfo = 1;
 }
 
 message DocInfo {
