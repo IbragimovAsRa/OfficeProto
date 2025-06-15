@@ -5,6 +5,11 @@ package office;
 
 service Generate {
 	rpc GetAvailableDocs(google.protobuf.Empty) returns (DocInfoList) {} 
+	rpc GenerateDocumentByName(google.protobuf.Empty) returns (stream GenerateProgress) {}  
+}
+
+message GenerateProgress {
+	double value = 1;
 }
 
 message DocInfoList {
