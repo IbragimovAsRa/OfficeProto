@@ -1,2 +1,2 @@
-# OfficeGenProto
-OfficeGen proto files
+# OfficeProto
+Office proto files
